@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #333;
+  color: darkblue;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+</style>
+</head>
+<body>
+
+        <div class="topnav" id="myTpnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+
+        <div style="padding-left:16px">
+        <h2>create a workable responsive header using jquery</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolore fugiat aspernatur. Consequatur aliquid itaque dolorem neque, autem ea error sit dicta odio ex, aut minima ratione harum alias quam.</p>
+        </div>
+
+        <script>
+        function myFunction() {
+        var x = document.getElementById("myTpnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+        </script>
+
+</body>
+</html>
